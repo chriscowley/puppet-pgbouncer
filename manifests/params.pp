@@ -25,13 +25,12 @@ class pgbouncer::params {
   $admin_users        = lookup({
     'name'          => 'pgbouncer::admin_users',
     'value_type'    => Array,
-    'default_value' => '["postgres"]'
+    'default_value' => ["postgres"]
     })
-  $stats_users        = ['stats', 'postgres']
   $stats_users        = lookup({
     'name'          => 'pgbouncer::stats_users',
     'value_type'    => Array,
-    'default_value' => '["stats", "postgres"]'
+    'default_value' => ["stats", "postgres"]
     })
 
   $pool_mode          = 'session'
@@ -42,11 +41,11 @@ class pgbouncer::params {
   $databases          = lookup({
     'name'          => 'pgbouncer::databases',
     'value_type'    => Array,
-    'default_value' => '[]'
+    'default_value' => []
     })
   $users              = lookup({
     'name'          => 'pgbouncer::users',
     'value_type'    => Array,
-    'default_value' => '[]'
+    'default_value' => []
     })
 }
