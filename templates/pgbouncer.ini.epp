@@ -13,7 +13,7 @@ auth_file = <%= $auth_file %>
 admin_users = <%= $admin_users.join(',') %>
 stats_users = <%= $stats_users.join(',') %>
 pool_mode = <%= $pool_mode %>
-server_reset_query = <%= server_reset_query %>
-max_client_conn = <%= max_client_conn %>
-default_pool_size = <%= default_pool_size %>
+server_reset_query = <%= $server_reset_query %>
+max_client_conn = <%= $max_client_conn %>
+default_pool_size = <%= $default_pool_size %>
 
