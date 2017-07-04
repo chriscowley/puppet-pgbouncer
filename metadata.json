@@ -1,0 +1,24 @@
+{
+  "name": "chriscowley-pgbouncer",
+  "version": "0.1.0",
+  "author": "chriscowley",
+  "summary": "Install pg_bouncer",
+  "license": "Apache-2.0",
+  "source": "https://gogs.chriscowley.me.uk/Puppet/pgbouncer.git",
+  "project_page": "https://gogs.chriscowley.me.uk/Puppet/pgbouncer",
+  "issues_url": "https://gogs.chriscowley.me.uk/Puppet/pgbouncer/issues",
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_requirement": ">= 1.0.0"
+    }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "7"
+      ]
+    }
+  ]
+}
