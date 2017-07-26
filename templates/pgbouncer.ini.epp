@@ -3,6 +3,11 @@
 gitlabhq_production = host=10.110.84.66 dbname=gitlabhq_production port=5432 user=gitlab password=correcthorsebatterystaple client_encoding=UNICODE
 mattermost_production = host=10.110.84.66 dbname=gitlabhq_production port=5432 user=gitlab password=correcthorsebatterystaple client_encoding=UNICODE
 
+<% $dbs.each |$db| { -%>
+<%= $db %>
+<% } %>
+
+
 [pgbouncer]
 logfile = /var/log/pgbouncer.log
 pidfile = /var/run/pgbouncer/pgbouncer.pid
