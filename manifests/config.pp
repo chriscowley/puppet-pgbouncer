@@ -15,6 +15,7 @@ class pgbouncer::config {
   $max_client_conn = $pgbouncer::max_client_conn
   $default_pool_size = $pgbouncer::default_pool_size
   $users     = $pgbouncer::users
+  $databases = $pgbouncer::databases
 
   file { $auth_file:
     ensure  => present,
@@ -36,6 +37,7 @@ class pgbouncer::config {
       server_reset_query => $server_reset_query,
       max_client_conn    => $max_client_conn,
       default_pool_size  => $default_pool_size,
+      databases          => $databases,
       }
     )
   }

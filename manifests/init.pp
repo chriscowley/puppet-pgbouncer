@@ -24,6 +24,7 @@ class pgbouncer (
   $server_reset_query = $::pgbouncer::params::server_reset_query,
   $max_client_conn    = $::pgbouncer::params::max_client_conn,
   $default_pool_size  = $::pgbouncer::params::default_pool_size,
+  $databases          = $::pgbouncer::params::databases,
 ) inherits ::pgbouncer::params {
 
   # validate parameters here

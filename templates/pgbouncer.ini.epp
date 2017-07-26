@@ -1,10 +1,7 @@
 
 [databases]
-gitlabhq_production = host=10.110.84.66 dbname=gitlabhq_production port=5432 user=gitlab password=correcthorsebatterystaple client_encoding=UNICODE
-mattermost_production = host=10.110.84.66 dbname=gitlabhq_production port=5432 user=gitlab password=correcthorsebatterystaple client_encoding=UNICODE
-
-<% $dbs.each |$db| { -%>
-<%= $db %>
+<% $databases.each |$db| { -%>
+<%= $db['source_db'] -%> = host=<%= $db['host'] -%> dbname=<%= $db['dbname'] -%> port=<%= $db['port'] -%> user=<%= $db['user'] -%> password=<%= $db['password'] -%> client_encoding=UNICODE
 <% } %>
 
 
