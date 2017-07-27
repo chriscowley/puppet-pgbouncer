@@ -1,7 +1,7 @@
 
 [databases]
 <% $databases.each |$db| { -%>
-<%= $db['source_db'] -%> = host=<%= $db['host'] -%> dbname=<%= $db['dbname'] -%> port=<%= $db['port'] -%> user=<%= $db['user'] -%> password=<%= $db['password'] -%> client_encoding=UNICODE
+<%= $db['source_db'] %> = host=<%= $db['host'] %> dbname=<%= $db['dbname'] %> port=<%= $db['port'] %> user=<%= $db['user'] %> password=<%= $db['password'] %> client_encoding=UNICODE
 <% } %>
 
 
